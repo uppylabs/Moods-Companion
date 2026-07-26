@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moods Companion — a scorekeeper and card reference for the Mood Swings card game.">
+<title>Support — Moods Companion</title>
+<style>
+:root{ color-scheme:light; --paper:#EFE7D0; --card:#FBF6E9; --ink:#17141B; --tan:#6E6857; --violet:#8A4FC0;
+ --s1:#3FA1DE;--s2:#46B39A;--s3:#74C06A;--s4:#9B72C7;--s5:#CE5A93; --grid:rgba(23,20,27,.055);
+ --display:ui-rounded,"SF Pro Rounded",system-ui,-apple-system,sans-serif; --body:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;}
+*{box-sizing:border-box;}
+body{margin:0;}
+.page{min-height:100vh;font-family:var(--body);color:var(--ink);line-height:1.62;
+ background-color:var(--paper);
+ background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+ background-size:34px 34px;padding:clamp(20px,4vw,44px) clamp(18px,5vw,56px) 56px;}
+.wrap{max-width:1080px;margin:0 auto;}
+.wrap.narrow{max-width:720px;}
+.site-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;flex-wrap:wrap;}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);}
+.brand canvas{width:64px;height:22px;}
+.brand span{font-family:var(--display);font-weight:800;font-size:1.15rem;}
+.site-nav{display:flex;gap:18px;}
+.site-nav a{color:var(--tan);text-decoration:none;font-weight:600;font-size:.92rem;}
+.site-nav a:hover,.brand:hover span{color:var(--violet);}
+.site-nav a[aria-current="page"]{color:var(--ink);}
+.spectrum{height:5px;width:100%;max-width:220px;border-radius:99px;border:1.5px solid var(--ink);
+ background:linear-gradient(90deg,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5));margin:0 0 30px;}
+.doc h1{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,2.9rem);line-height:1.05;margin:0 0 6px;text-wrap:balance;}
+.doc .meta{color:var(--tan);font-size:.9rem;margin:0 0 26px;}
+.doc h2{font-family:var(--display);font-weight:800;font-size:1.3rem;margin:34px 0 8px;}
+.doc p,.doc li{max-width:65ch;}
+.doc a{color:var(--violet);font-weight:600;}
+.faq h3{font-weight:700;font-size:1.04rem;margin:22px 0 4px;}
+.card{background:var(--card);border:2px solid var(--ink);border-radius:16px;padding:18px 20px;box-shadow:6px 7px 0 rgba(23,20,27,.12);margin:22px 0;}
+footer{margin-top:44px;padding-top:22px;border-top:1.5px solid rgba(23,20,27,.15);color:var(--tan);font-size:.8rem;line-height:1.5;}
+footer .fnav{display:flex;gap:16px;margin-bottom:12px;flex-wrap:wrap;}
+footer .fnav a{color:var(--tan);font-weight:600;text-decoration:none;}
+footer .fnav a:hover{color:var(--violet);}
+:focus-visible{outline:3px solid var(--violet);outline-offset:2px;border-radius:4px;}
+</style>
+</head>
+<body>
+<div class="page"><div class="wrap narrow">
+<header class="site-head">
+  <a class="brand" href="index.html"><canvas class="mark" width="128" height="44" aria-hidden="true"></canvas><span>Moods Companion</span></a>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+<div class="spectrum" aria-hidden="true"></div>
+<main class="doc">
+  <h1>Support</h1>
+  <p>Thanks for using <b>Moods Companion</b>, a scorekeeper and card reference for the Mood Swings card game.</p>
+  <div class="card">
+    <h2 style="margin-top:0">Contact</h2>
+    <p style="margin:0">Questions, feedback, or a bug to report? Email <a href="mailto:grasp.growls-0g@icloud.com">grasp.growls-0g@icloud.com</a> and I'll get back to you.</p>
+  </div>
+  <h2>Frequently asked questions</h2>
+  <div class="faq">
+    <h3>Does the app work offline?</h3><p>Yes. Moods Companion works fully offline — it never connects to the internet.</p>
+    <h3>Is my data private?</h3><p>Completely. The app has no accounts, no ads, and no tracking. Your games are saved only on your device. See the <a href="privacy.html">Privacy Policy</a> for details.</p>
+    <h3>How do I keep score?</h3><p>On the Game tab, tap the right side of a player's card to add a point and the left side to subtract. Tap <b>End Round</b> to award the round to the top scorer.</p>
+    <h3>How do teams work?</h3><p>In a Team game, each team shares one combined score. Tap the team's card to adjust it.</p>
+    <h3>Where do the cards and rules come from?</h3><p>The Cards and Rules tabs are a reference for the physical game. The app tracks scores and rounds — it doesn't enforce card effects.</p>
+  </div>
+</main>
+<footer>
+  <div class="fnav"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></div>
+  Moods Companion is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+</footer>
+</div></div>
+<script>document.querySelectorAll("canvas.mark").forEach(function(c){var x=c.getContext("2d"),w=c.width,h=c.height,cy=h/2,amp=h*0.3,span=w*0.86,x0=(w-span)/2,g=x.createLinearGradient(x0,0,x0+span,0);["#3FA1DE","#46B39A","#74C06A","#9B72C7","#CE5A93"].forEach(function(col,i,a){g.addColorStop(i/(a.length-1),col);});x.lineCap="round";x.lineJoin="round";function wv(lw,st){x.beginPath();for(var px=0;px<=span;px++){var y=cy-amp*Math.sin((px/span)*Math.PI*2);px===0?x.moveTo(x0+px,y):x.lineTo(x0+px,y);}x.lineWidth=lw;x.strokeStyle=st;x.stroke();}wv(9,"#17141B");wv(5,g);});</script>
+</body>
+</html>
